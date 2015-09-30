@@ -42,11 +42,21 @@ public class PruebaServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nombre = request.getParameter("nombre");
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.println("Peticion recibida por POST");
-		out.println("<h1>Saludos "+nombre+"</h1>");
-		out.close();
+		request.setAttribute("miAtributo", "Juan");
+		
+		this.getServletConfig().getServletContext().getRequestDispatcher("/respuesta.jsp").forward(request, response);
+		
+
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
