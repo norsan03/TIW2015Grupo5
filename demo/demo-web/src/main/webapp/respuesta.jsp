@@ -13,6 +13,10 @@
  -->
 <h2>Saludos ${param.nombre }</h2>
 
-<%="Seguro que no te llamas "+request.getAttribute("miAtributo")  %>
+<%="Seguro que no te llamas "+request.getAttribute("miAtributo")  %> <!--  esta forma de incluir codigo java es antigua aunque sigue siendo funcional es mejor usar taglibs 
+
+y esto se podria sustituir por ${miAtributo}
+
+ -->
 </body>
 </html>
