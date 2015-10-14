@@ -131,7 +131,11 @@
 		<javadocs.skip>false</javadocs.skip>
 		<pmd.skip>false</pmd.skip>
 		<versions.skip>false</versions.skip>
-		
+
+		<local.glassfish.home>/home/tiw/glassfish4/glassfish</local.glassfish.home>
+		<local.glassfish.user>admin</local.glassfish.user>
+		<local.glassfish.domain>domain1</local.glassfish.domain>
+		<local.glassfish.passfile>${local.glassfish.home}/domains/${local.glassfish.domain}/config/domain-passwords</local.glassfish.passfile>
 	</properties>
 <url>https://${repository.domain}/${repository.user}/${repository.name}</url>
 		<scm>
@@ -524,6 +528,32 @@
 		</pluginManagement>
 		<plugins>
 		<plugin>
+			<groupId>org.glassfish.maven.plugin</groupId>
+			<artifactId>maven-glassfish-plugin</artifactId>
+			<version>2.1</version>
+				<configuration>
+				<glassfishDirectory>${local.glassfish.home}</glassfishDirectory>
+					<user>admin</user>
+					<!-- <passwordFile>${local.glassfish.passfile}</passwordFile> -->
+					<adminPassword>admin</adminPassword>
+					<domain>
+						<name>domain1</name>
+						<httpPort>8080</httpPort>
+						<adminPort>4848</adminPort>
+					</domain>
+					<components>
+						<component>
+							<name>${project.artifactId}</name>
+					<artifact>${project.artifactId}-ear/target/${project.artifactId}-ear-${project.version}.ear</artifact>
+						</component>
+					</components>
+					<debug>true</debug>
+					<terse>false</terse>
+					<echo>true</echo>
+				</configuration>
+		</plugin>
+		<plugin>
+		
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
 				<executions>
