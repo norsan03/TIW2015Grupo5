@@ -11,6 +11,8 @@
 </style>
 </head>
 <body>
+<!-- Inclusión de una cabecera que muestra/oculta la opción Logout -->
+<jsp:include page="header.jsp"></jsp:include>
 <h1>Hola</h1>
 <h2>Tu nombre es: ${sessionScope.usuario.nombre}</h2> <!-- Esto saca el objeto usuario almacenado en la sesion por el LoginServlet y accede a su propiedad nombre -->
 <h2>tu clave es: ${param.password }</h2> <!-- Esto saca el parametro pasado por el usuario y recogido dentro del objeto request -->
@@ -37,5 +39,6 @@ por el servlet controlador y no hay datos en el objeto request.
 </c:forEach>
 </table>
 <p><a href="login.jsp">Volver</a></p>
+</div>
 </body>
 </html>

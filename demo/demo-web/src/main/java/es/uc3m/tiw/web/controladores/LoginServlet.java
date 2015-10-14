@@ -50,6 +50,10 @@ public class LoginServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String salir = request.getParameter("accion");
+		if (salir != null && !salir.equals("")) {
+			request.getSession().invalidate();
+		}
 		this.getServletContext().getRequestDispatcher(LOGIN_JSP).forward(request, response);
 	}
 
@@ -63,7 +67,7 @@ public class LoginServlet extends HttpServlet {
 		String mensaje ="";
 		String pagina = "";
 		pagina = LOGIN_JSP;
-		HttpSession sesion = request.getSession();
+		HttpSession sesion = request.getSession(true);
 		Usuario u = comprobarUsuario(user, password);
 		if (u != null){
 			
