@@ -13,7 +13,7 @@
    body {
         margin:0;
         padding:0;
-        background-color:#ff9f3e;
+        background-color:#F2F2F2;
         font-family: 'Open Sans', sans-serif;
 }
 .content {
@@ -23,7 +23,7 @@
         margin-top:5%;
  }
 .row1 {
-        background-color:#e74c3c;
+        background-color:#236FBD;
         padding-top: 25px;
         padding-bottom: 32px;
 }
@@ -36,14 +36,14 @@
         font-family: 'Righteous', cursive;
 }
 .row2 {
-        background-color:#5e4534;
+        background-color:#D3D3D3;
         padding-top: 25px;
         padding-bottom: 32px;
 }
 input[type="text"] {
         padding:10px;
         width:67%;
-        background-color:#F7B2AB;
+        background-color:#5CB8E6;
         border:none;
         color:white;
         border-radius:4px;
@@ -55,7 +55,7 @@ input[type="text"] {
 input[type="password"] {
         padding:10px;
         width:67%;
-        background-color:#F7B2AB;
+        background-color:#5CB8E6;
         border:none;
         color:white;
         border-radius:4px;
@@ -68,7 +68,7 @@ input[type="password"] {
         margin-left:0%;
         font-size:22px;
         text-decoration:none;
-        color:#FFE5CC;
+        color:#000000;
         font-family: 'Anton', sans-serif;
         font-weight:bold;
         text-transform:uppercase;
@@ -83,7 +83,7 @@ input[type="password"] {
 }
 input[type="submit"] {
         padding:10px;
-        background-color:#e74c3c;
+        background-color:#236FBD;
         width:150px;
         border:none;
         cursor:pointer;
@@ -113,7 +113,7 @@ input[type="submit"]:hover {
 }
 .footer a , a:active {
         text-decoration:none;
-        color:#9C5524;
+        color:#000000;
 
 }
 .footer a:hover {
@@ -320,15 +320,15 @@ input[type="submit"] {
 <body>
         <div class="content">
                 <div class="row1">
-                        <h1>STUDENT LOGIN FORM</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h1>ACCEDE A STUDENTSBOX</h1>
+                        <p>Registrate con tu nombre de usuario y contraseña</p>
                         <form>
                                 <input type="text" name="userid" value="USERNAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'USERNAME';}">
                                 <input type="password" name="psw" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}">
                         </form>
                 </div>
                 <div class="row2">
-                        <a href="#">Register</a>
+                        <a href="#">Registro</a>
                         <input type="submit" value="Login">
                 </div>
         </div>
