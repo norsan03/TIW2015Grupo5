@@ -328,7 +328,7 @@ input[type="submit"] {
                         </form>
                 </div>
                 <div class="row2">
-                        <a href="#">Registro</a>
+                        <a href="formulario.jsp">Registro</a>
                         <input type="submit" value="Login">
                 </div>
         </div>
