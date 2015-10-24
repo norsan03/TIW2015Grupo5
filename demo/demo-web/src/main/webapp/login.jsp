@@ -1,39 +1,339 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-<style type="text/css">
- label{font-weight: bold;}
- .error { color: red;}
+<title>Student Login Form Flat Responsive widget :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Student Login Form Widget Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='//fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<style>
+   body {
+        margin:0;
+        padding:0;
+        background-color:#ff9f3e;
+        font-family: 'Open Sans', sans-serif;
+}
+.content {
+        width:30%;
+        text-align:center;
+        margin:auto;
+        margin-top:5%;
+ }
+.row1 {
+        background-color:#e74c3c;
+        padding-top: 25px;
+        padding-bottom: 32px;
+}
+.row1 p {
+        margin:20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size:14px;
+}
+.row1 h1 {
+        font-family: 'Righteous', cursive;
+}
+.row2 {
+        background-color:#5e4534;
+        padding-top: 25px;
+        padding-bottom: 32px;
+}
+input[type="text"] {
+        padding:10px;
+        width:67%;
+        background-color:#F7B2AB;
+        border:none;
+        color:white;
+        border-radius:4px;
+        outline:none;
+        font-family: 'Open Sans' , sans-serif;
+        font-size:18px;
+        margin-top:9%;
+}
+input[type="password"] {
+        padding:10px;
+        width:67%;
+        background-color:#F7B2AB;
+        border:none;
+        color:white;
+        border-radius:4px;
+        outline:none;
+        font-family: 'Open Sans' , sans-serif;
+        font-size:18px;
+        margin-top:9%;
+}
+.row2 a {
+        margin-left:0%;
+        font-size:22px;
+        text-decoration:none;
+        color:#FFE5CC;
+        font-family: 'Anton', sans-serif;
+        font-weight:bold;
+        text-transform:uppercase;
+}
+.row2 a:hover {
+        color:#ff9f3e;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+}
+input[type="submit"] {
+        padding:10px;
+        background-color:#e74c3c;
+        width:150px;
+        border:none;
+        cursor:pointer;
+        color:white;
+        font-weight:bold;
+        font-family: 'Open Sans', sans-serif;
+        font-size:20px;
+        margin-left: 23%;
+}
+input[type="submit"]:hover {
+        background-color:#ff9f3e;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+}
+.footer {
+        margin-top:5%;
+        text-align:center;
+}
+.footer p {
+        font-weight:bold;
+        font-size:14px;
+        color:#9C5524;
+        line-height:25px;
+}
+.footer a , a:active {
+        text-decoration:none;
+        color:#9C5524;
+
+}
+.footer a:hover {
+        color:red;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+}
+
+/*-- responsive-mediaquries --*/
+@media(max-width:1280px){
+.content {
+        width:40%;
+}
+}
+
+@media(max-width:1024px){
+.content {
+        width:50%;
+        margin-top:5%;
+}
+.footer {
+        margin-top:5%;
+}
+}
+
+@media(max-width:800px){
+.content {
+        width:50%;
+}
+}
+
+@media(max-width:768px) {
+.content {
+        width:55%;
+        margin-top:28%;
+}
+.footer {
+        margin-top:22%;
+}
+}
+
+@media(max-width:736px) {
+.content{
+        width:75%;
+        margin-top:6%;
+}
+}
+
+@media(max-width:667px) {
+.content {
+        width:75%;
+        margin-top:5%;
+}
+.footer {
+    margin-top: 7%;
+}
+}
+
+@media(max-width:640px){
+.content {
+        width:58%;
+}
+}
+
+@media(max-width:600px){
+.content {
+        width:75%;
+}
+.footer p {
+        font-size:13px;
+}
+}
+
+@media(max-width:568px){
+.content {
+    width: 75%;
+}
+.footer {
+        margin-top:7%;
+}
+}
+
+@media(max-width:480px){
+.content {
+        width:62%;
+}
+}
+
+@media(max-width:414px){
+.content {
+        width:76%;
+        margin-top:16%;
+}
+.row1 h1 {
+        font-size:27px;
+}
+input[type="submit"] {
+        width:120px;
+        margin-left:12%;
+}
+.row2 a {
+        font-size:20px;
+}
+.footer {
+        margin-top:17%;
+}
+.footer p {
+        font-size:16px;
+}
+}
+
+@media(max-width:384px){
+.content {
+        margin-top:12%;
+}
+.row1 h1 {
+        font-size:25px;
+}
+.footer {
+        margin-top:10%;
+}
+.footer p {
+        font-size:15px;
+}
+}
+
+@media(max-width:375px){
+.content {
+        width:76%;
+        margin-top:13%;
+}
+.row1 h1 {
+        font-size:24px;
+}
+input[type="text"] {
+        width:70%;
+}
+input[type="password"] {
+        width:70%;
+}
+input[type="submit"] {
+        padding:9px;
+        width:105px;
+        margin-left:20%;
+}
+.row2 {
+        padding-top:28px;
+        padding-bottom:28px;
+        }
+.row2 a {
+        font-size:18px;
+        margin-left:2%;
+}
+.footer p {
+        font-size:14px;
+}
+}
+
+@media(max-width:320px){
+.content {
+        margin-top:8%;
+        width:75%;
+}
+.row1 h1 {
+        font-size:20px;
+}
+.row1 p {
+        font-size:13px;
+}
+.row2 {
+        padding-top:15px;
+        padding-bottom:20px;
+}
+.row2 a {
+        font-size:15px;
+        margin-left:0%;
+}
+input[type="text"] {
+        width:70%;
+}
+input[type="password"] {
+        width:70%;
+}
+input[type="submit"] {
+        width:95px;
+        padding:9px;
+        font-size:19px;
+        margin-left:10%;
+}
+.footer {
+        margin-top:7%;
+}
+.footer p {
+        font-size:12px;
+}
+}
+
 </style>
+
 </head>
 <body>
-<!-- Esto es una prueba made in MigusHome-->
-<!-- Inclusión de una cabecera que muestra/oculta la opción Logout -->
-<jsp:include page="header.jsp"></jsp:include>
-<!-- El siguiente ejemplo de JSTL muestra como usar un if-else mediante la libreria cor: si hay atributo mensaje se muestra en color rojo dicho mensaje, en caso contrario un texto par el formulario  -->
-<div>
-<c:choose>
-	<c:when test="${not empty mensaje }">
-		<p class="error">${mensaje }</p>
-	</c:when>
-	<c:otherwise>
-		<p>Introduce tu usuario y clave para entrar</p>
-	</c:otherwise>
-</c:choose>
-<!-- el siguiente formulario  envia los datos al LoginServlet. Los parametros contienen el atributo name -->
-<form action="login" method="post">
-
-
-<label for="usuario">Usuario:</label><input type="text" name="usuario" id="usuario"/><br/>
-<label for="password">Password:</label><input type="password" name="password" id="password" />
-<input type="submit" value="Enviar"/>
-
-</form>
-</div>
+        <div class="content">
+                <div class="row1">
+                        <h1>STUDENT LOGIN FORM</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <form>
+                                <input type="text" name="userid" value="USERNAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'USERNAME';}">
+                                <input type="password" name="psw" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}">
+                        </form>
+                </div>
+                <div class="row2">
+                        <a href="#">Register</a>
+                        <input type="submit" value="Login">
+                </div>
+        </div>
+        <div class="footer">
+                <p>Copyright � 2015 Student Login Page. All Rights Reserved | Designed by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
+        </div>
 </body>
 </html>
