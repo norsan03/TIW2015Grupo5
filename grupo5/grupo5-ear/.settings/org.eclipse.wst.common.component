@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="grupo5-ear-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="grupo5-util-1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/es/uc3m/tiw/util/grupo5-util/1.0/grupo5-util-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="grupo5-ejb-1.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/es/uc3m/tiw/ejb/grupo5-ejb/1.0/grupo5-ejb-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="grupo5-web-1.0.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/es/uc3m/tiw/web/grupo5-web/1.0/grupo5-web-1.0.war">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
